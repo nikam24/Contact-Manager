@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const mysql = require('mysql2');
 const fs = require('fs');
+const PORT = process.env.PORT || 8080;
 
 // const conn = mysql.createPool({
 //     host: 'localhost',
@@ -18,7 +19,7 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.listen(8080, () => {
+app.listen(PORT, () => {
     console.log('Server is running on port 8080');
 });
 
