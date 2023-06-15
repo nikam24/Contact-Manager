@@ -86,4 +86,5 @@ app.get('/', (req,res) => {
     //     console.log("result : ", result);
     //     res.send('Hello world');
     // });
+    res.send('Hello world');
 });
