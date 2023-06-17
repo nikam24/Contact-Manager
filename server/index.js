@@ -6,12 +6,6 @@ const mysql = require('mysql2');
 const fs = require('fs');
 const PORT = process.env.PORT || 8080;
 
-// const conn = mysql.createPool({
-//     host: 'localhost',
-//     user: 'root',
-//     password: 'Space@786',
-//     database: 'crud_contact'
-// });
 
 var conn=mysql.createConnection({host:"contact.mysql.database.azure.com", user:"pratham", password:"Space@786", database:"crud_contact", port:3306, ssl:{ca:fs.readFileSync("./DigiCertGlobalRootG2.crt.pem")}});
 
